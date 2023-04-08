@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html body {
+  font-size: 12pt;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+html a {
+  text-decoration: none;
+  color: black;
+}
+
+#whatsapp {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  margin: 20px;
+  background-image: url('../img/whatsapp.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 9999;
+}
+
+
+header {
+    position: fixed;
+    height: 90px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 1000;
+	  box-shadow: 0px 5px 20px rgba(0,0,0,0.8);
+  }
+
+  #logohead {
+    flex: 1 0 200px;
+    padding-left: 20px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .linknav {
+    transition: 0.4s;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 0 10px;
+    margin: 0 10px;
+  }
+  .linknav:hover {
+    background-color: #0084f8;
+    color: #ffffff;
+    padding: 24px 10px;
+  }
+
+  img{
+    max-height: 60px;
+  }
+  
+  #trabajos img {
+    max-height: 130px;
+    border-radius: 1rem;
+    margin: 5px;
+  }
+  
+  main {
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  main p {
+   margin-left: 50px; 
+  }
+
+  .perfil{
+    margin:20px;
+    text-align: center;
+  }
+
+  .perfiles{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  #somos h2{
+    margin:20px;
+    text-align: center;
+  }
+
+  #contratar h2{
+    margin:20px;
+    text-align: center;
+  }
+
+
+  #perfil1{
+    background-image: url(../img/perfil1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+  }
+
+  #perfil2{
+    background-image: url(../img/perfil1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+  }
+
+  #perfil3{
+    background-image: url(../img/perfil1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+  }
+
+  #perfil4{
+    background-image: url(../img/perfil1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+  }  
+
+  #servicios {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .seccion{
+    color:white;
+    padding: 20px;
+  }
+
+  .seccion1 {
+    flex: 1 1 200px;
+    height: 200px;
+    background-color: rgb(124, 124, 124);
+  }
+  
+  .seccion2 {
+    flex: 1 1 200px;
+    height: 200px;
+    background-color: rgb(90, 90, 90);
+  }
+  
+  .seccion3 {
+    flex: 1 1 200px;
+    height: 200px;
+    background-color: rgb(37, 37, 37);
+    color:white;
+    padding: 20px;
+  }
+
+  #tecnologias{
+    text-align: center;
+  }
+
+  #trabajos {
+    width: 100%;
+  }
+  
+  .trabajos {
+    width: 100%;
+    height: autox;
+    background-color: #ccc;
+  }
+
+  footer {
+    background-color: #27292d;
+    color: #555555;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  footer div {
+    flex: 1 1 50%;
+    padding: 20px;
+  }
+  
+  footer div:first-child {
+    padding-left: 40px;
+  }
+  
+  footer div:last-child {
+    padding-right: 40px;
+  }
+
+  #copy {
+    color: white;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    height: 50px;
+  }
+  
+  /* Cambiar color de la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #3b3b3b;
+}
+
+/* Cambiar color del thumb o barra de desplazamiento arrastrable */
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 20px;
+  border: 3px solid #3b3b3b;
+}
+
+/* Cambiar el color cuando se pasa el cursor encima del thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #4d94ff;
+}
+
+/* Cambiar el color cuando se hace clic en el thumb */
+::-webkit-scrollbar-thumb:active {
+  background-color: #07edd6;
+}
+
+.trabajos h2{
+  text-align: center;
+  padding: 20px;
+}
+
+#destacados {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#clientes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.planes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+/* carrousel de imágenes en slide */
+
+#links {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  background: #45484d;
+  color: #fafafa;
+  border: 1px solid #45484d;
+}
+#links .proyectos {
+  margin: auto;
+  text-align: center;
+  width: 80%;
+}
+#links a {
+  display: inline-block;
+  padding: 18px;
+}
+#links i {
+  color: #fafafa;
+  font-size: 15pt;
+}
+
+.columna1{
+  text-align: right;
+  color: gray;
+}
