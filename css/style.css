@@ -13,6 +13,7 @@ html body {
   color: black;
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 html a {
   text-decoration: none;
@@ -49,6 +50,7 @@ header {
     padding: 10px;
     z-index: 1000;
 	  box-shadow: 0px 5px 20px rgba(0,0,0,0.8);
+    font-weight: bold;
   }
 
   #logohead {
@@ -107,8 +109,18 @@ header {
     align-items: center;
   }
 
-  main p {
-   margin-left: 50px; 
+  main h2{
+    margin-left: 50px; 
+    color: #ffffff;
+    font-size: 68px;
+    text-decoration: none;
+  }
+
+  main p{
+    margin-left: 50px; 
+   color: #ffffff;
+   font-size: 18px;
+   text-decoration: none;
   }
 
   .perfil{
@@ -127,11 +139,93 @@ header {
     text-align: center;
   }
 
+  #somos .somos-agencia{
+    margin:20px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+  }
+
+  .perfiles{
+    font-weight: bold;
+  }
+
   #contratar h2{
     margin:20px;
     text-align: center;
   }
 
+  #contratar .contenedor{
+    justify-content: center;
+    justify-content: space-around;
+  }
+
+  .contenedor{
+    display: flex;
+  }
+
+  .tarjeta{
+    width: 350px;
+    height: auto;
+    margin: 25px;
+    padding: 40px 20px;
+    background: linear-gradient(-45deg, #24ff22, #9a4eff);
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: all 0.5s ease;
+  }
+
+  .tarjeta:nth-child(2){
+    background: linear-gradient(-45deg, #ffec61, #f321d7)
+  }
+
+.tarjeta:nth-child(3){
+    background: linear-gradient(-45deg, #f403d1, #64b5f6)
+  }
+
+  .titulo .imagen{
+    font-size: 64px;
+    width: 64px;
+    height: 64px;
+    line-height: 100px;
+    text-align: center;
+    /* border-radius: 50%; */
+    /* box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); */
+ }
+ 
+ .titulo h2{
+     color: white;
+     font-size: 30px;
+     margin-top: 15px;
+ 
+ }
+ 
+ .lista ul{
+     margin-top: 20px;
+ }
+ 
+ .lista li{
+     list-style: none;
+     color: white;
+ }
+
+ .boton{
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.tarjeta:hover{
+  transform: scale(1.05);
+
+}
 
   #perfil1{
     background-image: url(../img/perfil1.jpg);
