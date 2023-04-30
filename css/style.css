@@ -109,8 +109,18 @@ header {
     align-items: center;
   }
 
-  main p {
-   margin-left: 50px; 
+  main h2{
+    margin-left: 50px; 
+    color: #ffffff;
+    font-size: 68px;
+    text-decoration: none;
+  }
+
+  main p{
+    margin-left: 50px; 
+   color: #ffffff;
+   font-size: 18px;
+   text-decoration: none;
   }
 
   .perfil{
