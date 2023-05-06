@@ -1,24 +1,39 @@
+/*----------------------------------------------------------------------------------------------------------
+LIMPIEZA Y ESTILO BASE
+------------------------------------------------------------------------------------------------------------*/
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-html body {
-  font-size: 12pt;
+body {
+  font-size: 11pt;
   color: black;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
   font-family: 'Montserrat', sans-serif;
 }
+
 html a {
   text-decoration: none;
   color: black;
 }
+
+/*----------------------------------------------------------------------------------------------------------
+BODY
+------------------------------------------------------------------------------------------------------------*/
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+WHATSAPP
+------------------------------------------------------------------------------------------------------------*/
 
 #whatsapp {
   position: fixed;
@@ -34,24 +49,26 @@ html a {
   z-index: 9999;
 }
 
+/*----------------------------------------------------------------------------------------------------------
+ CABECERA
+------------------------------------------------------------------------------------------------------------*/
 
-header {
-    position: fixed;
-    height: 90px;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    z-index: 999;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    z-index: 1000;
-	  box-shadow: 0px 5px 20px rgba(0,0,0,0.8);
-    font-weight: bold;
-  }
+
+#cabecera {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px 10px 80px;
+  z-index: 1000;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.8);
+}
 
   #logohead {
     flex: 1 0 200px;
@@ -346,6 +363,317 @@ header {
   background-color: #3b3b3b;
 }
 
+.linknav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+}
+
+.linknav li {
+  margin: 0 10px;
+}
+
+.linknav a {
+  color: white;
+  text-decoration: none;
+}
+
+.linknav {
+  transition: 0.4s;
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+
+.linknav:hover {
+  background-color: #0084f8;
+  color: #ffffff;
+  padding: 24px 10px;
+}
+
+#cabecera img {
+  max-height: 45px;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+PORTADA
+------------------------------------------------------------------------------------------------------------*/
+
+#portada {
+  background-image: url("../img/bg-main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#portada p {
+  margin-left: 50px;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+NUESTRO EQUIPO
+------------------------------------------------------------------------------------------------------------*/
+
+#somos {
+  background-color: #00142c;
+}
+
+#somos h2 {
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+#perfiles {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.perfil {
+  margin: 20px;
+  text-align: center;
+}
+
+#perfil1 {
+  background-image: url(../img/perfil1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+
+#perfil2 {
+  background-image: url(../img/perfil1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+
+#perfil3 {
+  background-image: url(../img/perfil1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+
+#perfil4 {
+  background-image: url(../img/perfil1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------
+CONTRATACIÓN
+------------------------------------------------------------------------------------------------------------*/
+
+#contratar h2 {
+  margin: 20px;
+  text-align: center;
+}
+
+.planes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+SERVICIOS QUE OFRECEMOS
+------------------------------------------------------------------------------------------------------------*/
+
+#servicios {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.seccion {
+  color: white;
+  padding: 20px;
+}
+
+.seccion1 {
+  flex: 1 1 200px;
+  height: 200px;
+  background-color: rgb(124, 124, 124);
+}
+
+.seccion2 {
+  flex: 1 1 200px;
+  height: 200px;
+  background-color: rgb(90, 90, 90);
+}
+
+.seccion3 {
+  flex: 1 1 200px;
+  height: 200px;
+  background-color: rgb(37, 37, 37);
+  color: white;
+  padding: 20px;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------
+TECNOLOGÍAS QUE UTILIZAMOS
+------------------------------------------------------------------------------------------------------------*/
+
+#tecnologias {
+  text-align: center;
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------------
+TRABAJOS REALIZADOS
+------------------------------------------------------------------------------------------------------------*/
+
+#trabajos {
+  width: 100%;
+}
+
+#trabajos img {
+  max-height: 130px;
+  border-radius: 1rem;
+  margin: 5px;
+}
+
+.trabajos {
+  width: 100%;
+  height: autox;
+  background-color: #ccc;
+}
+
+.trabajos h2 {
+  text-align: center;
+  padding: 20px;
+}
+
+#destacados {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------------
+NUESTROS CLIENTES
+------------------------------------------------------------------------------------------------------------*/
+
+#clientes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------------
+REDES Y PORFOLIO ONLINE
+------------------------------------------------------------------------------------------------------------*/
+
+#links {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  background: #45484d;
+  color: #fafafa;
+  border: 1px solid #45484d;
+}
+
+#links .proyectos {
+  margin: auto;
+  text-align: center;
+  width: 80%;
+}
+
+#links a {
+  display: inline-block;
+  padding: 18px;
+}
+
+#links i {
+  color: #fafafa;
+  font-size: 15pt;
+}
+
+.columna1 {
+  text-align: right;
+  color: gray;
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------------
+PIE DE PÁGINA
+------------------------------------------------------------------------------------------------------------*/
+
+#pie {
+  background-color: #27292d;
+  color: #555555;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#pie div {
+  flex: 1 1 50%;
+  padding: 20px;
+}
+
+#pie div:first-child {
+  padding-left: 40px;
+}
+
+#pie div:last-child {
+  padding-right: 40px;
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------------
+COPYRIGHT
+------------------------------------------------------------------------------------------------------------*/
+
+#copy {
+  color: white;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  height: 50px;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------
+DECORACIÓN DE LA PÁGINA
+------------------------------------------------------------------------------------------------------------*/
+
+/* Cambiar color de la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #3b3b3b;
+}
+
 /* Cambiar color del thumb o barra de desplazamiento arrastrable */
 ::-webkit-scrollbar-thumb {
   background-color: #000000;
@@ -361,58 +689,4 @@ header {
 /* Cambiar el color cuando se hace clic en el thumb */
 ::-webkit-scrollbar-thumb:active {
   background-color: #07edd6;
-}
-
-.trabajos h2{
-  text-align: center;
-  padding: 20px;
-}
-
-#destacados {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-#clientes {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.planes {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-
-/* carrousel de imágenes en slide */
-
-#links {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  position: relative;
-  background: #45484d;
-  color: #fafafa;
-  border: 1px solid #45484d;
-}
-#links .proyectos {
-  margin: auto;
-  text-align: center;
-  width: 80%;
-}
-#links a {
-  display: inline-block;
-  padding: 18px;
-}
-#links i {
-  color: #fafafa;
-  font-size: 15pt;
-}
-
-.columna1{
-  text-align: right;
-  color: gray;
 }
