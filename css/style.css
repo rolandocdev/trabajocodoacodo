@@ -320,6 +320,53 @@ header {
     background-color: #ccc;
   }
 
+  #planes {
+    background-image: url(../img/fondo-start.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #planes:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(214, 219, 235);
+    position: absolute;
+    opacity: 0.5;
+  }
+
+  #planes h2 {
+    font-weight: bold;
+    font-size: 45px;
+    color: black;
+    padding: 15px;
+    position: relative;   
+  }
+
+  #planes .descripcion {
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+    position: relative;
+  }
+
+  .botonplan{   
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .botonplan :hover {
+    transform: scale(1.05);
+  }
+
   footer {
     background-color: #27292d;
     color: #555555;
