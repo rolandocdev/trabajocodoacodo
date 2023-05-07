@@ -110,14 +110,14 @@ header {
   }
 
   main h2{
-    margin-left: 50px; 
+    margin-left: 140px; 
     color: #ffffff;
     font-size: 68px;
     text-decoration: none;
   }
 
   main p{
-    margin-left: 50px; 
+    margin-left: 140px; 
    color: #ffffff;
    font-size: 18px;
    text-decoration: none;
@@ -151,17 +151,25 @@ header {
   }
 
   #contratar h2{
+    font-weight: bold;
     margin:20px;
-    text-align: center;
+    text-align: center; 
+    font-size: 30px;
   }
 
   #contratar .contenedor{
     justify-content: center;
     justify-content: space-around;
+    background-color: #000000;
   }
 
   .contenedor{
     display: flex;
+  }
+
+  .contratacion img{
+    margin-left: 50%;
+   
   }
 
   .tarjeta{
@@ -255,6 +263,7 @@ header {
     width: 150px;
     height: 150px;
     border-radius: 100%;
+    
   }
 
   #perfil4{
