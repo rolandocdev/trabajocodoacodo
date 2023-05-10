@@ -7,9 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&amp;display=swap" rel="stylesheet">
+
+
     <script src="js/script.js"></script>
     <title>Document</title>
 </head>
@@ -25,55 +32,70 @@
 
     <!-- Esta es la cabecera de la página -->
     <!-- ----------------------------------------------------------------------------------------------- -->
-    <header id="cabecera">
-        <img id="logohead" src="img/logo.jpg" alt="Logo">
-        <nav>
-            
-            <a class="linknav" href="portfolio.html">Portfolio</a>
-            <a class="linknav" href="planes.html">Contratación</a>
-            <a class="linknav" href="contacto.html">Contacto</a>
-            
-        </nav>
+    <header>
+        <div class="box" id="cabecera">
+            <img id="logohead" src="img/logo.jpg" alt="Logo">
+            <!-- <button id="boton-menu" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button> -->
+            <nav>
+                <a class="linknav" href="portfolio.html">Portfolio</a>
+                <a class="linknav" href="planes.html">Contratación</a>
+                <a class="linknav" href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+        <div class="borde"></div>
     </header>
-
 
 
 
     <!-- Sección principal de la página -->
     <!-- ----------------------------------------------------------------------------------------------- -->
-    <main id="portada">
-        <div>
-            <h2>Equipo Cinco - Agencia de Desarrollo Web</h2>
-            <p class="secu">Brindamos una respuesta rápida, creativa y potente para dar a tu empresa la mejor imagen en internet.</p>
-        </div>
-    </main>
+    <div class="cover">
+        <main id="portada">
+            <div class="box line">
+                <div id="presentation">
+                    <h2>Equipo Cinco</h2>
+                    <h2 id="sub">Agencia de Desarrollo Web</h2>
+                    <p class="secu">Brindamos una respuesta rápida, creativa y potente para dar a tu empresa la mejor imagen en internet.</p>
+                </div>
+            </div>
+        </main>
+    </div>
 
 
     
     <!-- Sección principal de presentación del equipo -->
     <!-- ----------------------------------------------------------------------------------------------- -->
-    <div id="somos">
-        <h2>Nosotros</h2>
-        <p class="somos-agencia">Somos una agencia de desarrollo web en constante crecimiento e innovación. Nuestro objetivo principal es impulsar tu empresa. Diseñamos y desarrollamos páginas web de alto impacto a partir de un análisis de tu marca y tus potenciales clientes creando así una imagen digital a la medida de tu empresa.</p>
-        <div id="perfiles">
-            <div class="perfil">
-                <div id="perfil1"></div>
-                <p>Sergio</p>
-            </div>
-            <div class="perfil">
-                <div id="perfil2"></div>
-                <p>Martín</p>
-            </div>
-            <div class="perfil">
-                <div id="perfil3"></div>
-                <p>Nicolás</p>
-            </div>
-            <div class="perfil">
-                <div id="perfil4"></div>
-                <p>Rolando</p>
+    <section id="somos">
+        <div class="box">
+            <h2>Nosotros</h2>
+            <p class="somos-agencia">Somos una agencia de desarrollo web en constante crecimiento e innovación. Nuestro
+                objetivo principal es impulsar tu empresa. Diseñamos y desarrollamos páginas web de alto impacto a partir de
+                un análisis de tu marca y tus potenciales clientes creando así una imagen digital a la medida de tu empresa. Somos:
+            </p>
+            <div id="perfiles">
+                <div class="perfil">
+                    <div id="perfil1" class="img-perfil"></div>
+                    <p class="nombre">Sergio</p>
+                </div>
+                <div class="perfil">
+                    <div id="perfil2" class="img-perfil"></div>
+                    <p class="nombre">Martín</p>
+                </div>
+                <div class="perfil">
+                    <div id="perfil3" class="img-perfil"></div>
+                    <p class="nombre">Nicolás</p>
+                </div>
+                <div class="perfil">
+                    <div id="perfil4" class="img-perfil"></div>
+                    <p class="nombre">Rolando</p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
 
     
