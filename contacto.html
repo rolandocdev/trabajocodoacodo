@@ -35,65 +35,24 @@
         <h2>Formulario de contacto</h2>
 
         <div class="container">
-            <form action="#" class="needs-validation" novalidate="">
-                <div class="mb-2">
-                 <label class="form-label" form="name">Nombre</label>
-                 <input placeholder="Por favor ingrese su nombre" class="form-control" type="text" name="name" required="">
-                </div>
-                <div class="valid-feedback">
-                    Nombre ingresado correctamente
-                </div>
-                <div class="invalid-feedback">
-                    Es necesario ingresar su nombre
-                </div>
-
-                <div class="mb-2">
-                <label class="form-label" form="name">Apellido</label>
-                <input placeholder="Por favor ingrese su apellido" class="form-control" type="text" name="apellido" required="">
-                </div>
-                <div class="valid-feedback">
-                    Apellido ingresado correctamente
-                </div>
-                <div class="invalid-feedback">
-                    Es necesario ingresar su apellido
-                </div>
-
-                <div class="mb-2">
-                <label class="form-label" form="email">Email</label>
-                <input placeholder="Por favor ingrese su email" class="form-control" type="email" name="email" required="">
-                </div>
-                <div class="valid-feedback">
-                    Email ingresado correctamente
-                </div>
-                <div class="invalid-feedback">
-                    Es necesario ingresar su email
-                </div>
-
-                <div class="mb-2">
-                <label class="form-label" form="tel">Telefono</label>
-                <input placeholder="Por favor ingrese su numero de telefono" class="form-control" type="tel" name="tel" required="">
-                </div>
-                <div class="valid-feedback">
-                    Telefono ingresado correctamente
-                </div>
-                <div class="invalid-feedback">
-                    Es necesario ingresar su numero de telefono
-                </div>
-
-                <div class="mb-2">
-                <label class="form-label" form="description">Consulta</label>
-                <textarea placeholder="Por favor escriba su consulta" class="form-control" name="description" required="" cols="30" rows="3"></textarea>
-                </div>
-                <div class="valid-feedback">
-                    Su consulta ha sido ingresada correctamente
-                </div>
-                <div class="invalid-feedback">
-                    Es necesario ingresar su consulta
-                </div>
-
-                <div>
+            <form id="formulario" onsubmit="return validarFormulario()">
+                 <label form="name">Nombre</label>
+                 <input placeholder="Por favor ingrese su nombre" class="form-control" type="text" id="nombre" name="name">
+                
+                <label form="apellido">Apellido</label>
+                <input placeholder="Por favor ingrese su apellido" class="form-control" type="text" id="apellido" name="apellido" >
+            
+                <label form="direccion">Direccion</label>
+                <input placeholder="Por favor ingrese su direccion" class="form-control" type="text" id="direccion" name="direccion">
+                
+                <label form="dni">Numero de documento</label>
+                <input placeholder="Por favor ingrese su numero de documento" class="form-control" type="number" id="dni" name="dni">
+                
+                <label form="description">Consulta</label>
+                <textarea placeholder="Por favor escriba su consulta" class="form-control" id="consulta" name="description" cols="30" rows="3"></textarea>
+                <br>
                 <input type="submit" value="Enviar" class="w-100 btn btn-primary">
-                </div>
+               
             </form>
         </div>
     </main>
