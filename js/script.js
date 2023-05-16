@@ -29,10 +29,10 @@ function validarFormulario() {
   var nombre = document.getElementById("nombre").value.trim();
   var apellido = document.getElementById("apellido").value.trim();
   var dni = document.getElementById("dni").value.trim();
-  var direccion = document.getElementById("direccion").value.trim();
+  var email = document.getElementById("email").value.trim();
 
   // Verificar si algún campo está en blanco
-  if (nombre === "" || dni === "" || direccion === "" || apellido === "") {
+  if (nombre === "" || dni === "" || email === "" || apellido === "") {
     alert("Por favor, complete todos los campos del formulario.");
     return false;
   }
@@ -55,13 +55,13 @@ function validarFormulario() {
 
   // Verificar si el DNI contiene solo 8 dígitos numéricos
   if (dni.length !== 8) {
-    alert("El campo 'dni' debe contener exactamente 8 dígitos numéricos.");
+    alert("El campo 'documento' debe contener exactamente 8 dígitos numéricos.");
     return false;
   }
   for (var j = 0; j < dni.length; j++) {
     var digit = dni.charAt(j);
     if (digit < "0" || digit > "9") {
-      alert("El campo 'dni' solo puede contener dígitos numéricos.");
+      alert("El campo 'documento' solo puede contener dígitos numéricos.");
       return false;
     }
   }
