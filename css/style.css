@@ -833,7 +833,7 @@ ESTILO DE CONTACTO
  .gradiente {
   width: 100%;
   color: #fff;
-  background: linear-gradient(45deg,aqua,blue,gray,black);
+  background: linear-gradient(45deg,#00ffff,#0000ff,#808080,#000000);
   background-size: 400% 400%;
   position: relative;
   animation: cambiar 10s ease-in-out infinite;
