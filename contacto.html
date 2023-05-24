@@ -32,8 +32,8 @@
 
     <main class="contacto gradiente">
           
-        <h2>Formulario de contacto</h2>
-
+        <h2>Necesitás ayuda? Podés <br> contactarnos!</h2>
+            <h6>Por favor, completá el formulario y uno de nuestros agentes se pondrá en contacto para resolver tu consulta.</h6>
         <div class="container">
             <form id="formulario" onsubmit="return validarFormulario()">
                  <label form="name">Nombre</label>
@@ -42,8 +42,8 @@
                 <label form="apellido">Apellido</label>
                 <input placeholder="Por favor ingrese su apellido" class="form-control" type="text" id="apellido" name="apellido" >
             
-                <label form="direccion">Direccion</label>
-                <input placeholder="Por favor ingrese su direccion" class="form-control" type="text" id="direccion" name="direccion">
+                <label form="email">Email</label>
+                <input placeholder="Por favor ingrese su email" class="form-control" type="email" id="email" name="email">
                 
                 <label form="dni">Numero de documento</label>
                 <input placeholder="Por favor ingrese su numero de documento" class="form-control" type="number" id="dni" name="dni">
@@ -51,6 +51,17 @@
                 <label form="description">Consulta</label>
                 <textarea placeholder="Por favor escriba su consulta" class="form-control" id="consulta" name="description" cols="30" rows="3"></textarea>
                 <br>
+                <h6>Aviso de Privacidad, Cookies y Permisos<br>
+                    Grupocinco se compromete a proteger tu privacidad y garantizar la protección de<br> tus datos personales. Para más información, por favor, consulta nuestro<br> <a href="http://www.google.com.ar">Aviso de Privacidad, </a><a href="http://www.google.com.ar">Términos de uso, </a><a href="http://www.google.com.ar">Aviso de Cookies, </a><br>
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Acepto terminos y condiciones
+                    </label>
+                    <div class="invalid-feedback">
+                    Acepte antes de enviar.
+                    </div>
+                </h6>
+                    
                 <input type="submit" value="Enviar" class="w-100 btn btn-primary">
                
             </form>

@@ -871,10 +871,14 @@ ESTILO DE CONTACTO
   .contacto h2{
     font-size: 1.8rem;
     font-weight: 600;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
   }
 
+   .contacto h6{
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
 
   .contratacion {
     background-image: url("../img/fondo.jpg");
@@ -1019,3 +1023,4 @@ ESTILO DE CONTACTO
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
