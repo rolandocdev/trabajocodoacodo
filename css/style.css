@@ -359,7 +359,7 @@ nav a {
 }
 
 #perfil1 {
-  background-image: url(../img/perfil1.jpg);
+  background-image: url(../img/Sergio2.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -459,7 +459,7 @@ NUESTRO EQUIPO
 }
 
 #perfil1 {
-  background-image: url(../img/perfil1.jpg);
+  background-image: url(../img/Sergio2.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -469,7 +469,7 @@ NUESTRO EQUIPO
 }
 
 #perfil2 {
-  background-image: url(../img/perfil1.jpg);
+  background-image: url(../img/Martin.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -479,7 +479,7 @@ NUESTRO EQUIPO
 }
 
 #perfil3 {
-  background-image: url(../img/perfil1.jpg);
+  background-image: url(../img/Nicolas.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -489,7 +489,7 @@ NUESTRO EQUIPO
 }
 
 #perfil4 {
-  background-image: url(../img/perfil1.jpg);
+  background-image: url(../img/Rolando.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -516,14 +516,27 @@ CONTRATACIÓN
 /*----------------------------------------------------------------------------------------------------------
 SERVICIOS QUE OFRECEMOS
 ------------------------------------------------------------------------------------------------------------*/
-
+#servicios{
+  background-image: linear-gradient(45deg, black, rgba(0, 0, 0, 0.027)), url('../img/main.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+.line{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 .seccion {
   color: rgb(159, 159, 159);
   padding: 20px;
-  display: flex;
+  /*display: flex;*/
   flex-direction: column;
   text-align: center;
-  width: 100%;
+  min-width: 250px;
+  flex: 1 0 33%;
 }
 
 .caja {
@@ -532,6 +545,7 @@ SERVICIOS QUE OFRECEMOS
   border-style:groove;
   border-color: #d5d5d5;
   border-radius:  20px;
+  background-color: #ccc
 }
 
 .fotocaja {
@@ -539,9 +553,26 @@ SERVICIOS QUE OFRECEMOS
   height: 35%;
   border-radius:  17px  17px 0 0;
 }
-
+.fotocaja img{
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  border-radius: 17px  17px 0 0;
+  position: relative;
+}
+.logocaja{
+ padding: 10px; 
+}
+.logocaja img{
+  object-fit: cover;
+  width: 10%;
+  max-height: 10%;
+  position: relative;
+}
 .textocaja {
-  height: 65%;
+  height: 55%;
+  color: #000000;
+  overflow: auto;
 }
 
 /*----------------------------------------------------------------------------------------------------------
@@ -755,11 +786,11 @@ ESTILO DE PORTFOLIO
   padding: 30px;
   width: 100%;
   grid-gap: 40px;
-  background-image: url("../img/fondo.jpg");
+  /*background-image: url("../img/fondo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: fixed;*/
   color: #ffffff;
 }
 /* Extra small devices (400px and down) */
@@ -921,6 +952,7 @@ ESTILO DE CONTACTO
 
   .contenedor{
     display: flex;
+    /*flex-wrap: wrap;*/
 
 }
 
